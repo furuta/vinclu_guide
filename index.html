@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <LINK REL="SHORTCUT ICON" HREF="apple-touch-icon.png">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="index.js"></script>
+<script src="jquery.mobile-1.4.2.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.css">
+</head>
+<body>
+<div id="container">
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li style="font-family: Merio; left:30px;" class="ui-btn-icon-left ui-icon-myicon"></li>
+		    </ul>
+	    </div><!-- /navbar -->
+    </div><!-- /footer -->
+    <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Vinclu:</legend>
+            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+            <label for="radio-choice-h-2a">top</label>
+            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+            <label for="radio-choice-h-2b">bottom</label>
+        </fieldset>
+    </div>
+    <div data-role="fieldcontain">
+        <label for="prefecture" class="select">都道府県：</label>
+        <select name="prefecture" id="prefecture" data-mini="true" data-inline="true">
+            <option>東京都</option>
+        </select>
+    </div>
+<!--
+    <div data-role="fieldcontain">
+        <label>観光名所：</label>
+        <select data-mini="true" data-inline="true">
+            <option>東京タワー</option>
+            <option>浅草寺</option>
+            <option>皇居</option>
+        </select>
+    </div>
+-->
+    <span style="font-size: 16px;">観光名所：</span>
+    <ul data-role="listview" data-inset="true">
+    <li>
+        <a href="direction.html?direction=top&lat=35.65858&lng=139.745433" rel="external">
+        <img src="http://jsrun.it/assets/g/O/f/y/gOfyQ.jpg" />
+        <h3>東京タワー</h3><p>xxx</p>
+        </a>
+    </li>
+    <li>
+        <a href="direction.html?direction=top&lat=35.714765&lng=139.796655" rel="external">
+        <img src="http://jsrun.it/assets/5/J/6/8/5J687.jpg" />
+        <h3>浅草寺</h3><p>yyy</p>
+        </a>
+    </li>
+    <li>
+        <a href="direction.html?direction=top&lat=35.685175&lng=139.752799" rel="external">
+        <img src="http://jsrun.it/assets/w/C/e/5/wCe5G.jpg" />
+        <h3>皇居</h3><p>zzz</p>
+        </a>
+    </li>
+    </ul>
+    <!--<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-navigation">案内開始</a>
+    -->
+</div>
+
+</body>
+</html>
